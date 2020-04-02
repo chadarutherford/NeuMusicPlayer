@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		63C5629D2436566200DF6303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5629C2436566200DF6303 /* AppDelegate.swift */; };
 		63C5629F2436566200DF6303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5629E2436566200DF6303 /* SceneDelegate.swift */; };
-		63C562A12436566200DF6303 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C562A02436566200DF6303 /* ContentView.swift */; };
+		63C562A12436566200DF6303 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C562A02436566200DF6303 /* MusicPlayerView.swift */; };
 		63C562A32436566300DF6303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C562A22436566300DF6303 /* Assets.xcassets */; };
 		63C562A62436566300DF6303 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C562A52436566300DF6303 /* Preview Assets.xcassets */; };
 		63C562A92436566300DF6303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C562A72436566300DF6303 /* LaunchScreen.storyboard */; };
+		63C562B2243657B600DF6303 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C562B1243657B600DF6303 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63C562992436566200DF6303 /* NeuMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5629C2436566200DF6303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C5629E2436566200DF6303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63C562A02436566200DF6303 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63C562A02436566200DF6303 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
 		63C562A22436566300DF6303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63C562A52436566300DF6303 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		63C562A82436566300DF6303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63C562AA2436566300DF6303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C562B1243657B600DF6303 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,9 @@
 		63C5629B2436566200DF6303 /* NeuMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				63C5629C2436566200DF6303 /* AppDelegate.swift */,
-				63C5629E2436566200DF6303 /* SceneDelegate.swift */,
-				63C562A02436566200DF6303 /* ContentView.swift */,
-				63C562A22436566300DF6303 /* Assets.xcassets */,
-				63C562A72436566300DF6303 /* LaunchScreen.storyboard */,
-				63C562AA2436566300DF6303 /* Info.plist */,
+				63C562B4243659A300DF6303 /* Views */,
+				63C562B32436597E00DF6303 /* Support */,
+				63C562B0243657A300DF6303 /* Constants */,
 				63C562A42436566300DF6303 /* Preview Content */,
 			);
 			path = NeuMusicPlayer;
@@ -73,6 +72,42 @@
 				63C562A52436566300DF6303 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		63C562B0243657A300DF6303 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				63C562B1243657B600DF6303 /* Color.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		63C562B32436597E00DF6303 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				63C5629C2436566200DF6303 /* AppDelegate.swift */,
+				63C5629E2436566200DF6303 /* SceneDelegate.swift */,
+				63C562A22436566300DF6303 /* Assets.xcassets */,
+				63C562AA2436566300DF6303 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		63C562B4243659A300DF6303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63C562B5243659AF00DF6303 /* Storyboard */,
+				63C562A02436566200DF6303 /* MusicPlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63C562B5243659AF00DF6303 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				63C562A72436566300DF6303 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C5629D2436566200DF6303 /* AppDelegate.swift in Sources */,
+				63C562B2243657B600DF6303 /* Color.swift in Sources */,
 				63C5629F2436566200DF6303 /* SceneDelegate.swift in Sources */,
-				63C562A12436566200DF6303 /* ContentView.swift in Sources */,
+				63C562A12436566200DF6303 /* MusicPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NeuMusicPlayer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NeuMusicPlayer/Info.plist;
+				INFOPLIST_FILE = NeuMusicPlayer/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NeuMusicPlayer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = NeuMusicPlayer/Info.plist;
+				INFOPLIST_FILE = NeuMusicPlayer/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
