@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		63284C2B24366FD10027799B /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C2A24366FD10027799B /* BasicButton.swift */; };
 		63284C2D2436743A0027799B /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C2C2436743A0027799B /* PlayPauseButton.swift */; };
+		63284C2F2436796E0027799B /* CoverArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C2E2436796E0027799B /* CoverArtView.swift */; };
+		63284C31243679F10027799B /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C30243679F10027799B /* Image.swift */; };
+		63284C33243684DC0027799B /* SongInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C32243684DC0027799B /* SongInfoView.swift */; };
+		63284C35243688D10027799B /* SongProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C34243688D10027799B /* SongProgressView.swift */; };
 		63C5629D2436566200DF6303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5629C2436566200DF6303 /* AppDelegate.swift */; };
 		63C5629F2436566200DF6303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5629E2436566200DF6303 /* SceneDelegate.swift */; };
 		63C562A12436566200DF6303 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C562A02436566200DF6303 /* MusicPlayerView.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		63284C2A24366FD10027799B /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
 		63284C2C2436743A0027799B /* PlayPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
+		63284C2E2436796E0027799B /* CoverArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverArtView.swift; sourceTree = "<group>"; };
+		63284C30243679F10027799B /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		63284C32243684DC0027799B /* SongInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfoView.swift; sourceTree = "<group>"; };
+		63284C34243688D10027799B /* SongProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongProgressView.swift; sourceTree = "<group>"; };
 		63C562992436566200DF6303 /* NeuMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5629C2436566200DF6303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C5629E2436566200DF6303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				63C562B1243657B600DF6303 /* Color.swift */,
+				63284C30243679F10027799B /* Image.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -104,6 +113,9 @@
 				63C562A02436566200DF6303 /* MusicPlayerView.swift */,
 				63284C2A24366FD10027799B /* BasicButton.swift */,
 				63284C2C2436743A0027799B /* PlayPauseButton.swift */,
+				63284C2E2436796E0027799B /* CoverArtView.swift */,
+				63284C32243684DC0027799B /* SongInfoView.swift */,
+				63284C34243688D10027799B /* SongProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,10 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C5629D2436566200DF6303 /* AppDelegate.swift in Sources */,
+				63284C31243679F10027799B /* Image.swift in Sources */,
 				63284C2B24366FD10027799B /* BasicButton.swift in Sources */,
 				63C562B2243657B600DF6303 /* Color.swift in Sources */,
+				63284C35243688D10027799B /* SongProgressView.swift in Sources */,
 				63C5629F2436566200DF6303 /* SceneDelegate.swift in Sources */,
 				63284C2D2436743A0027799B /* PlayPauseButton.swift in Sources */,
+				63284C33243684DC0027799B /* SongInfoView.swift in Sources */,
+				63284C2F2436796E0027799B /* CoverArtView.swift in Sources */,
 				63C562A12436566200DF6303 /* MusicPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
