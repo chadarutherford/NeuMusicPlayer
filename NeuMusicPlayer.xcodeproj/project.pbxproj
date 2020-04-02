@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63284C2B24366FD10027799B /* BasicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C2A24366FD10027799B /* BasicButton.swift */; };
+		63284C2D2436743A0027799B /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284C2C2436743A0027799B /* PlayPauseButton.swift */; };
 		63C5629D2436566200DF6303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5629C2436566200DF6303 /* AppDelegate.swift */; };
 		63C5629F2436566200DF6303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C5629E2436566200DF6303 /* SceneDelegate.swift */; };
 		63C562A12436566200DF6303 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C562A02436566200DF6303 /* MusicPlayerView.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63284C2A24366FD10027799B /* BasicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButton.swift; sourceTree = "<group>"; };
+		63284C2C2436743A0027799B /* PlayPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
 		63C562992436566200DF6303 /* NeuMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5629C2436566200DF6303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63C5629E2436566200DF6303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			children = (
 				63C562B5243659AF00DF6303 /* Storyboard */,
 				63C562A02436566200DF6303 /* MusicPlayerView.swift */,
+				63284C2A24366FD10027799B /* BasicButton.swift */,
+				63284C2C2436743A0027799B /* PlayPauseButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C5629D2436566200DF6303 /* AppDelegate.swift in Sources */,
+				63284C2B24366FD10027799B /* BasicButton.swift in Sources */,
 				63C562B2243657B600DF6303 /* Color.swift in Sources */,
 				63C5629F2436566200DF6303 /* SceneDelegate.swift in Sources */,
+				63284C2D2436743A0027799B /* PlayPauseButton.swift in Sources */,
 				63C562A12436566200DF6303 /* MusicPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

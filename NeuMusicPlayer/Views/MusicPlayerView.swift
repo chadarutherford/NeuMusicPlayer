@@ -19,15 +19,25 @@ struct MusicPlayerView: View {
 			
 			// Container for every view on top of the gradient
 			VStack {
-				Button(action: {
-					// TODO: - Add back navigation later
-				}) {
-					Image(systemName: "arrow.left")
-						.resizable()
-						.aspectRatio(contentMode: .fit)
+				HStack {
+					BasicButton(imageName: "arrow.left")
+						.padding(.leading)
+					
+					Spacer()
+					
+					Text("PLAYING NOW")
 						.foregroundColor(.button)
-						.frame(width: 30, height: 30)
+						.font(Font.system(.headline).smallCaps())
+					
+					Spacer()
+					
+					BasicButton(imageName: "line.horizontal.3")
+						.padding(.trailing)
 				}
+				Spacer()
+				
+				PlayPauseButton()
+				.frame(width: 75, height: 75)
 			}
 		}
 	}
