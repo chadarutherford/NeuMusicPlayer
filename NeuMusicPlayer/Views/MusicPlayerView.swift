@@ -21,7 +21,7 @@ struct MusicPlayerView: View {
 				// Container for every view on top of the gradient
 				VStack {
 					HStack {
-						BasicButton(imageName: "arrow.left")
+						BasicButton(imageName: "arrow.left", size: 50, symbolConfig: .navButtonConfig)
 							.padding(.leading)
 						
 						Spacer()
@@ -32,7 +32,7 @@ struct MusicPlayerView: View {
 						
 						Spacer()
 						
-						BasicButton(imageName: "line.horizontal.3")
+						BasicButton(imageName: "line.horizontal.3", size: 50, symbolConfig: .navButtonConfig)
 							.padding(.trailing)
 					}
 					
@@ -44,8 +44,17 @@ struct MusicPlayerView: View {
 					
 					Spacer()
 					
-					PlayPauseButton()
-						.frame(width: 75, height: 75)
+					HStack {
+						BasicButton(imageName: "backward.end.fill", size: 75, symbolConfig: .playButtonConfig)
+							.padding(.trailing)
+						
+						PlayPauseButton()
+							.frame(width: 75, height: 75)
+						
+						BasicButton(imageName: "forward.end.fill", size: 75, symbolConfig: .playButtonConfig)
+							.padding(.leading)
+					}
+					Spacer()
 				}
 			}
 		}

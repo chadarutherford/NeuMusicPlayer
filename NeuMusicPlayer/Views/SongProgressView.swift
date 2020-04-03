@@ -13,16 +13,17 @@ struct SongProgressView: View {
 	@ObservedObject var song: Song
 	var trackRadius: CGFloat = 4
 	
+	
 	var body: some View {
 		VStack(spacing: 0) {
 			HStack {
-				Text("\(Int(song.currentTime))")
+				Text(formattedTime(for: song.currentTime))
 				
 				Spacer()
-				Text("\(Int(song.duration))")
+				Text(formattedTime(for: song.duration))
 			}
 			.foregroundColor(.button)
-			.font(.system(.caption))
+			.font(.system(.caption, design: .monospaced))
 			
 			ZStack {
 				RoundedRectangle(cornerRadius: trackRadius)
@@ -39,7 +40,7 @@ struct SongProgressView: View {
 												 startPoint: .leading,
 												 endPoint: .trailing))
 							.frame(width: geometry.size.width * self.percentageCompleteForSong(), height: self.trackRadius * 2)
-						Spacer()
+						Spacer(minLength: 0)
 					}
 				}
 				
@@ -57,9 +58,9 @@ struct SongProgressView: View {
 								DragGesture()
 									.onChanged { value in
 										self.song.currentTime = self.time(for: value.location.x, in: geometry.size.width)
-									}
+								}
 						)
-						Spacer()
+						Spacer(minLength: 0)
 					}
 				}
 			}
@@ -81,6 +82,14 @@ struct SongProgressView: View {
 	
 	func percentageCompleteForSong() -> CGFloat {
 		CGFloat(song.currentTime / song.duration)
+	}
+	
+	func formattedTime(for time: TimeInterval) -> String {
+		let formatter = DateFormatter()
+		formatter.dateFormat = "m:ss"
+		formatter.timeZone = TimeZone(secondsFromGMT: 0)
+		let date = Date(timeIntervalSinceReferenceDate: time)
+		return formatter.string(from: date)
 	}
 }
 

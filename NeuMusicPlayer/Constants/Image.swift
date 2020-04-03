@@ -11,3 +11,8 @@ import UIKit
 extension UIImage {
 	static let flower = UIImage(named: "Flower")!
 }
+
+extension UIImage.SymbolConfiguration {
+	static let navButtonConfig = UIImage.SymbolConfiguration(pointSize: 12, weight: .bold)
+	static let playButtonConfig = UIImage.SymbolConfiguration(pointSize: 16, weight: .bold)
+}

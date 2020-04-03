@@ -28,6 +28,8 @@ struct PlayPauseButton: View {
 					.foregroundColor(.white)
 					.font(Font.system(.callout).weight(.black))
 			}
+			.shadow(color: Color.black.opacity(0.3), radius: 10, x: 5, y: 5)
+			.shadow(color: Color.white.opacity(0.1), radius: 10, x: -5, y: -5)
 		}
     }
 	
