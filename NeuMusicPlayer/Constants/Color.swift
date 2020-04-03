@@ -10,6 +10,7 @@ import SwiftUI
 
 extension Color {
 	static let gradientTop = Color("BackgroundGradientTop")
+	static let gradientMedium = Color("BackgroundGradientMedium")
 	static let gradientBottom = Color("BackgroundGradientBottom")
 	static let button = Color("Button")
 	static let buttonBackground = Color("ButtonBackground")

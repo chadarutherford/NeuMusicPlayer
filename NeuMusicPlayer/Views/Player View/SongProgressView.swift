@@ -12,6 +12,9 @@ struct SongProgressView: View {
 	
 	@ObservedObject var song: Song
 	var trackRadius: CGFloat = 4
+	var remaining: TimeInterval {
+		song.duration - song.currentTime
+	}
 	
 	
 	var body: some View {
@@ -20,7 +23,7 @@ struct SongProgressView: View {
 				Text(formattedTime(for: song.currentTime))
 				
 				Spacer()
-				Text(formattedTime(for: song.duration))
+				Text("-\(formattedTime(for: remaining))")
 			}
 			.foregroundColor(.button)
 			.font(.system(.caption, design: .monospaced))
