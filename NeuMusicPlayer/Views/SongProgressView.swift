@@ -11,10 +11,10 @@ import SwiftUI
 struct SongProgressView: View {
 	
 	@ObservedObject var song: Song
-	var trackRadius: CGFloat = 3
+	var trackRadius: CGFloat = 4
 	
 	var body: some View {
-		VStack {
+		VStack(spacing: 0) {
 			HStack {
 				Text("\(Int(song.currentTime))")
 				
@@ -53,12 +53,30 @@ struct SongProgressView: View {
 							]), center: .center, startRadius: 6, endRadius: 40))
 							.frame(width: 40, height: 40)
 							.padding(.leading, geometry.size.width * self.percentageCompleteForSong() - 20)
+							.gesture(
+								DragGesture()
+									.onChanged { value in
+										self.song.currentTime = self.time(for: value.location.x, in: geometry.size.width)
+									}
+						)
 						Spacer()
 					}
 				}
 			}
+			.frame(height: 40)
 		}
-		.padding(.horizontal, 10)
+		.padding(.horizontal, 20)
+	}
+	
+	func time(for location: CGFloat, in width: CGFloat) -> TimeInterval {
+		let percentage = location / width
+		let time = song.duration * TimeInterval(percentage)
+		if time <= 0 {
+			return 0
+		} else if time >= song.duration {
+			return song.duration
+		}
+		return time
 	}
 	
 	func percentageCompleteForSong() -> CGFloat {
